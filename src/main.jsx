@@ -4,7 +4,7 @@ import Head from "./Head";
 import Body from "./Body";
 import Footer from "./Footer";
 import "./index.css"; // Import Tailwind CSS
-
+import { BrowserRouter } from "react-router-dom";
 const root = ReactDOM.createRoot(document.querySelector("#root"));
 
 const App = () => {
