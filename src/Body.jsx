@@ -30,7 +30,7 @@ const Body = () => {
           />
         </div>
         <h1 className="mt-2 text-white">
-          {mode === true ? "User logged in" : "User logged out"}
+          {mode === true ? "Logged In" : "Logged Out"}
         </h1>
       </div>
     </div>
