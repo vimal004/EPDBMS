@@ -1,6 +1,9 @@
+import Card from "./Card";
 const About=()=>{
     return (
-        <h1>ABout componetent</h1>
+        <div className="">
+            <Card/>
+        </div>
     );
 }
 

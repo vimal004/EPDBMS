@@ -24,8 +24,8 @@ const Head = () => {
           propname={"Dark Mode"}
           propcss={
             mode === false
-              ? "p-2 text-black bg-white border rounded-xl"
-              : "border border-transparent p-2 text-white bg-black border rounded-xl"
+              ? "p-2 text-black bg-white border rounded-xl "
+              : "border border-transparent p-2 text-white bg-black border rounded-xl "
           }
           propfunc={changemode}
         />

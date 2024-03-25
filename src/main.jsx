@@ -6,27 +6,36 @@ import Footer from "./Footer";
 import "./index.css"; // Import Tailwind CSS
 import About from "./About";
 import Error from "./Error";
-import { RouterProvider, createBrowserRouter, Outlet } from "react-router-dom";
+import {
+  BrowserRouter,
+  RouterProvider,
+  Outlet,
+  createBrowserRouter,
+} from "react-router-dom";
 const root = ReactDOM.createRoot(document.querySelector("#root"));
-
 const App = () => {
   return (
-    <div className="font-bold font-Roboto">
+    <div className="">
       <Head />
       <Outlet />
     </div>
   );
 };
-const approuter = createBrowserRouter([
+const Router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    errorElement: <Error />,
     children: [
       {
-        path: "/about",
-        element: <About />,
+        path: "/main",
+        element: <Body />,
       },
+      {
+        path: "/about",
+        element: <About />
+      }
     ],
   },
 ]);
-root.render(<RouterProvider router={approuter} />);
+root.render(<RouterProvider router={Router} />);

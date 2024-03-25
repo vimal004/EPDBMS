@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from "react";
 import Btn from "./Btn";
+import { Link } from "react-router-dom";
 const Body = () => {
   const [mode, setMode] = useState(false);
   const modeChange = () => {
     // Toggle mode state
     setMode((prevMode) => !prevMode);
   };
-
   return (
     <div className="box-border p-4 mt-4 text-center">
       <h1 className="text-xl font-extrabold text-white">Admin Login</h1>
