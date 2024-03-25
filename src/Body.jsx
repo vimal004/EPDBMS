@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Btn from "./Btn";
-import { Link } from "react-router-dom";
+import { Link, Router } from "react-router-dom";
 const Body = () => {
   const [mode, setMode] = useState(false);
   const modeChange = () => {
@@ -26,6 +26,7 @@ const Body = () => {
           <Btn
             propname="Login"
             propfunc={modeChange}
+            proprouter={"/about"}
             propcss={"p-2 text-black bg-white border rounded-xl"}
           />
         </div>
