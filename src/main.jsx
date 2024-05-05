@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import Head from "./Head";
 import Body from "./Body";
 import Footer from "./Footer";
-import "./index.css"; // Import Tailwind CSS //hello
+import "./index.css"; // Import Tailwind CSS //h
 import About from "./About";
 import Error from "./Error";
 import {
